@@ -1,5 +1,15 @@
-import './App.css';
-import { Navbar, Button, Container, Nav, NavDropdown, Row, Col, Image, Card } from "react-bootstrap";
+import "./App.css";
+import {
+  Navbar,
+  Button,
+  Container,
+  Nav,
+  NavDropdown,
+  Row,
+  Col,
+  Image,
+  Card,
+} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -36,11 +46,9 @@ function App() {
         <Container>
           <Row className="px-4 my-5">
             <Col sm={7}>
-              <Image
-                src="https://dummyimage.com/900x400/dee2e6/6c757d.jpg"
-                fluid
-                rounded
-                className=""
+              <Image src="assets/headshot.jpg" 
+              fluid 
+              rounded 
               />
             </Col>
             <Col sm={5}>
@@ -58,15 +66,22 @@ function App() {
               <Card style={{ width: "18rem" }}>
                 <Card.Img
                   variant="top"
-                  src="https://dummyimage.com/100x100/dee2e6/6c757d.jpg"
+                  src="assets/feedme.png"
+                  fluid
+                  height="191px"
                 />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>FeedMe</Card.Title>
                   <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Button
+                    href="https://epicasino.github.io/Feed-Me/"
+                    variant="secondary"
+                  >
+                    Go to FeedMe
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -74,59 +89,69 @@ function App() {
               <Card style={{ width: "18rem" }}>
                 <Card.Img
                   variant="top"
-                  src="https://dummyimage.com/100x100/dee2e6/6c757d.jpg"
+                  src="assets/daytrip.png"
+                  height="191px"
                 />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>DayTripper</Card.Title>
                   <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Button
+                    href="https://daytripper-app-1577e78f3877.herokuapp.com/"
+                    variant="secondary"
+                  >
+                    Go to Daytripper
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
             <Col>
               <Card style={{ width: "18rem" }}>
-                <Card.Img
-                  variant="top"
-                  src="https://dummyimage.com/100x100/dee2e6/6c757d.jpg"
-                />
+                <Card.Img variant="top" src="assets/planner.jpg" />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>Planner</Card.Title>
                   <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Button
+                    href="https://acolao.github.io/Work-Day-Scheduler/"
+                    variant="secondary"
+                  >
+                    Go to Workday Scheduler
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
             <Col>
               <Card style={{ width: "18rem" }}>
-                <Card.Img
-                  variant="top"
-                  src="https://dummyimage.com/100x100/dee2e6/6c757d.jpg"
-                />
+                <Card.Img variant="top" src="assets/password.png" />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>Password Generator</Card.Title>
                   <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Button
+                    href="https://acolao.github.io/Password-JavaScript/"
+                    variant="secondary"
+                  >
+                    Go to Password Generator
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
           </Row>
         </Container>
       </main>
-      <footer className='py-5 my-5 bg-dark'>
-        <Container className='px-4'>
-          <p className='text-center text-white'>Copyright &copy; Your Website 2023</p>
-
+      <footer className="py-5 my-5 bg-dark">
+        <Container className="px-4">
+          <p className="text-center text-white">
+            Copyright &copy; Alison Colao 2023
+          </p>
         </Container>
-
       </footer>
     </div>
   );
