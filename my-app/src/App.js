@@ -18,25 +18,12 @@ function App() {
       <header>
         <Navbar expand="lg" className="bg-body-tertiary">
           <Container>
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+            <Navbar.Brand href="#home">Alison Colao</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link">Resume</Nav.Link>
-                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Contact
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Something
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
-                    Separated link
-                  </NavDropdown.Item>
-                </NavDropdown>
+                <Nav.Link href="#link">Contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -45,13 +32,13 @@ function App() {
       <main>
         <Container>
           <Row className="px-4 my-5">
-            <Col sm={7}>
+            <Col sm={6}>
               <Image src="assets/headshot.jpg" 
               fluid 
               rounded 
               />
             </Col>
-            <Col sm={5}>
+            <Col sm={6}>
               <h1 className="font-weight-light">About Me</h1>
               <p className="mt-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
